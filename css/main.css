@@ -1,0 +1,140 @@
+/* Global Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+    transition: .3s ease;
+}
+
+li:hover {
+    font-size: 20px;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+h1 {
+    font-size: 45px;
+    color: var(--h1);
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: var(--grey);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    width: 100px;
+    padding: 8px 12px;
+    background: var(--h1);
+    color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+}
+
+:root {
+    --h1 : #130f49;
+    --blue : #34a1cd;
+    --dark-purple : #55527c;
+    --grey : #B4b2c5;
+    --pink : #ea4c89;
+    --circle : #f4f3ff;
+}
+
+.container {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.highlight {
+    color: var(--blue);
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    background: var(--circle);
+    position: absolute;
+    top: -40%;
+    right: -30%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-list ul, .social-icons ul {
+    display: flex;
+}
+
+.nav-list ul li, .social-icons ul li {
+    margin: 0px 30px;
+    color: var(--dark-purple);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.social-icons ul li:hover {
+    transform: scale(1.4);
+}
+
+.logo {
+    width: 50px;
+}
+
+/* Header */
+.header {
+    margin-top: 0px;
+    height: 100vh;
+}
+
+.header .col-1 {
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.header .col-2 {
+    width: 100%;
+}
+
+.header .col-2 img {
+    max-width: 80%;
+}
+
+.header p {
+    margin: 30px auto;
+}
